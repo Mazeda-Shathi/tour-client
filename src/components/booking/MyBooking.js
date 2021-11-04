@@ -8,7 +8,7 @@ const MyBooking = () => {
     const [booking, setBooking] = useState([]);
     const { user } = UseAuth()
     useEffect(() => {
-        fetch('http://localhost:5000/booking')
+        fetch('https://peaceful-coast-40911.herokuapp.com/booking')
             .then(res => res.json())
             .then(data => setBooking(data))
     })
@@ -17,7 +17,7 @@ const MyBooking = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure to  Cancel?')
         if (proceed) {
-            const url = `http://localhost:5000/booking/${id}`;
+            const url = `https://peaceful-coast-40911.herokuapp.com/booking/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

@@ -8,7 +8,7 @@ const ManageOrder = () => {
     const [status, setStatus] = useState(" ")
     const { user } = UseAuth();
     useEffect(() => {
-        fetch('http://localhost:5000/booking')
+        fetch('https://peaceful-coast-40911.herokuapp.com/booking')
             .then(res => res.json())
             .then(data => setManageOrder(data))
     })
@@ -17,7 +17,7 @@ const ManageOrder = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure to  delete?')
         if (proceed) {
-            const url = `http://localhost:5000/booking/${id}`;
+            const url = `https://peaceful-coast-40911.herokuapp.com/booking/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

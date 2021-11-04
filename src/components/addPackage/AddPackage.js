@@ -6,7 +6,7 @@ const AddPackage = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data);
-        axios.post('http://localhost:5000/package', data)
+        axios.post('https://peaceful-coast-40911.herokuapp.com/package', data)
             .then(res => console.log(res))
     };
     return (

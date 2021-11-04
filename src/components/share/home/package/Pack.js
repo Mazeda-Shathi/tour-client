@@ -12,7 +12,7 @@ const Pack = () => {
     const { pack } = useParams();
     const [Pack, setPack] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/package')
+        fetch('https://peaceful-coast-40911.herokuapp.com/package')
             .then(res => res.json())
             .then(data => setPack(data))
     })
@@ -23,7 +23,7 @@ const Pack = () => {
     const onSubmit = () => {
         const proceed = window.confirm('Confirm Booking')
         if (proceed) {
-            axios.post('http://localhost:5000/booking', {
+            axios.post('https://peaceful-coast-40911.herokuapp.com/booking', {
                 email: user.email,
                 name: data.name,
                 price: data.price,

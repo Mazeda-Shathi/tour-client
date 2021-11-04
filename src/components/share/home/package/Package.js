@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Package = () => {
     const [Packages, setPackages] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/package')
+        fetch('https://peaceful-coast-40911.herokuapp.com/package')
             .then(res => res.json())
             .then(data => setPackages(data))
     }, [])

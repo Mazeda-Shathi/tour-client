@@ -1,29 +1,13 @@
-# Getting Started with Create React App
+## live site link
+Firebase Link->https://tour-a3222.web.app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##About This Project:
+1.This is a website based on travelling as "Travelling Bangladesh"
 
-## Available Scripts
+2.In this use firebase,context api,React Router
 
-In the project directory, you can run:
+3.User Can sign in using google account easly.
 
-### `npm start`
+4.Customer can Book And also cancel easily.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
+5.Admin  Can Handle all booking .
